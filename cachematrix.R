@@ -12,9 +12,11 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() x
   setmean <- function(mean) m <<- mean
   getmean <- function() m
+  getInv <- function(solve) m
   list(set = set, get = get,
        setmean = setmean,
-       getmean = getmean)
+       getmean = getmean, 
+       getInv = getInv)
 }
 
 
